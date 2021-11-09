@@ -7,9 +7,9 @@ app = Flask(__name__)
 def index():
     return render_template(
         'index.html',
-        title='Welcome',
-        content="BenMcNelly.com")
-
+        title='Welcome to BenMcNelly.com',
+        content="Welcome to BenMcNelly.com")
+        
 
 if __name__ == '__main__':
     # Threaded option to enable multiple instances for multiple user access support
