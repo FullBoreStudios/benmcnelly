@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>{{ title }}</title>
+        <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        background: url("/static/why.jpeg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .flex-container {
+        margin: 30px;
+        min-height: 100%;
+        display: flex;
+        justify-content: center; /* align item horizontally */
+        align-items: center; /* align item vertically */
+    }
+    .item {
+        max-width: 500px;
+        min-width: 250px;
+        padding: 50px;
+        background-color:rgba(0,0,0,0.4);
+        filter: drop-shadow(0 -6mm 4mm rgb(160, 0, 210));
+        font-size: 34px;
+        font-family: 'Gloock', serif;
+    }
+    p {
+        filter: drop-shadow(0 0 0.75rem crimson);
+    }
+</style>
+
+    </head>
+    <body>
+    <div class="flex-container">
+        <div class="item">
+            <p>
+                {{ content }}
+            </p>
+        </div>
+    </div>
+    </body>
+</html>
